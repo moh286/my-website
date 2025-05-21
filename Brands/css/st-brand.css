@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    list-style: none;
+    transition: 0.3s;
+}
+
+.nav-bar ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-bar ul li a:first-child {
+    color: rgb(255, 255, 3);
+}
+
+a:hover {
+    color: yellow !important;
+}
+
+.overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 70, 81, 0.9);
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 1;
+    margin-bottom: 15%;
+
+}
+
+
+.carousel-caption a {
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.carousel-caption:hover a {
+    color: white !important;
+    background-color: yellow !important;
+}
+
+.carousel-caption h1 {
+    font-size: 80px;
+}
+
+.services h1 {
+    color: #2c4755;
+    font-size: 70px;
+
+}
+
+.services .one {
+    margin: 3%;
+
+}
+
+.services .one img {
+    margin-bottom: 15%;
+}
+
+.services .one p {
+    font-size: 14px;
+}
+
+.services .one h4 {
+    font-size: 20px;
+    margin: 0% 0% 10% 0%;
+}
+
+/* تنسيقات القسم الرئيسي */
+.web-design-section {
+    position: relative;
+    background-image: url('../img/services_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    color: #fff;
+}
+
+/* طبقة الشفافية */
+.web-design-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 70, 81, 0.9);
+    /* شفافية سوداء */
+    z-index: 0;
+}
+
+/* محتوى القسم */
+.web-design-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* تنسيق العنوان */
+.section-title {
+    color: #FFD700;
+    /* أصفر */
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+/* تنسيق الفقرة */
+.section-paragraph {
+    color: #ccc;
+    /* رمادي فاتح */
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* قائمة الميزات */
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.feature-item i {
+    color: white;
+    /* أصفر */
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+/* زر البدء */
+.btn-get-started {
+    background-color: #FFD700;
+    /* أصفر */
+    color: #000;
+    border: none;
+    padding: 12px 35px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-get-started:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+/* صورة العنصر النائب */
+.image-container {
+    padding: 20px;
+}
+
+.placeholder-image {
+    height: 400px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 215, 0, 0.5);
+}
+
+/* التأكد من أن المحتوى على اليسار */
+.order-lg-2 {
+    order: 2;
+}
+
+.order-lg-1 {
+    order: 1;
+}
+
+/* تنسيقات للهواتف */
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .placeholder-image {
+        height: 300px;
+    }
+}
+
+.portfolio .nav-secion ul li a {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.portfolio .nav-secion ul li {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.portfolio .nav-secion ul li:hover {
+    border-radius: 20px;
+    background-color: yellow;
+    color: white !important;
+}
+
+
+
+.portfolio h1 {
+    color: #2c4755;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.custom-yellow {
+    background-color: #ffc107;
+    color: #fff;
+    border: 2px solid #ffc107;
+    transition: all 0.3s ease;
+    margin: 0% 0% 0% 45%;
+}
+
+.custom-yellow:hover {
+    background-color: transparent;
+    color: #ffc107;
+    border: 2px solid #ffc107;
+
+}
+
+.you-tupe {
+    background-color: yellow;
+}
+
+.you-tupe .descrpion p {
+    font-size: 15px;
+
+}
+
+.descrpion {
+    margin: 7% 0% 0% 10%;
+}
+
+.custom-btn {
+    background-color: white;
+    color: #001f3f;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    margin: 5% 0% 5% 0%;
+
+}
+
+.custom-btn:hover {
+    background-color: #6c757d;
+    color: white;
+    border-color: #6c757d;
+}
+
+.video-container {
+    margin: -15% -6% 0% 0%
+}
+
+.you-tupe iframe {
+    margin-top: 50%;
+    width: 500px;
+    height: 260px;
+}
+
+.scren {
+    background-color: #2f434d;
+    height: 579px;
+    overflow: hidden;
+}
+
+.yellow-btn {
+    background-color: white;
+    color: #ffc107;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.yellow-btn:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+.abut .carousel-caption {
+    text-align: left;
+    margin: 0% 0% 5% 10%;
+    font-size: 15px;
+    
+}
+
+.abut .carousel-caption h4,
+h5 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.abut .carousel-caption h5{
+    font-size: 15px;
+}
+
+
+.abut .carousel-inner img {
+    width: 24%;
+    
+}
+.abut .icon-abut i{   
+     border: none;
+    width: 32px;
+    height: 32px;
+    padding: 1% 0% 0% 1%;
+    background: aliceblue;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.abut .icon-abut i:hover{   
+   background: #FFD700;
+   color: white !important;
+}
+
+.sikels {
+    background-color: #2f3e48;
+    color: #fff;
+    padding: 50px 0;
+}
+.section-title {
+    color: #ffd700;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .progress {
+    height: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+
+  .progress-bar {
+    background-color: #ffe600;
+  }
+
+  .skill-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.7;
+  }
+.blog .red-more .but a{
+    transition: 0.5s;
+}
+.blog .red-more .but a:hover{
+    color: #2f3e48 !important;
+    
+}
+
+.subscribe .send input  {
+    padding: 9px 22px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    outline: none;
+   
+  }
+  .custom-btn3 {
+    background-color: white;
+    color: #001f3f;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    margin: 5% 0% 5% 2%;
+    font-size: 13px;
+
+}
+
+.custom-btn3:hover {
+    background-color: #324651;
+    color: white;
+    border-color: #6c757d;
+}
+.contactus .form input{
+    font-weight: 300;
+    outline: none;
+    padding: 2% 9% 1% 1%;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+ .form input::placeholder{
+    color: white;
+ }
+ .contactus textarea{
+    font-weight: 300;
+    outline: none;
+    padding: 2% 4% 1% 1%;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    resize: none;
+ }
+ textarea::placeholder{
+    color: white;
+ }
+ footer .iconflex i{
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    padding: 1% 0% 0% 0%;
+    border-radius: 50px;
+    background: white;
+    cursor: pointer;
+    transition: 0.5s;
+ }
+ footer .iconflex i:hover{
+ background-color: #ffc107;
+ color: white !important;
+ }
+ /* but style */
+ .custom-btn1 {
+    background-color: #ffe600;
+    color: white;
+    border: 2px solid #ffe600;
+    transition: all 0.3s ease;
+    margin-bottom: 5%;
+}
+
+.custom-btn1:hover {
+    background-color: white;
+    color: #ffe600;
+    border-color: #ffe600;
+}
